@@ -6,7 +6,7 @@ const searchBtn = document.getElementById("search-btn");
 async function fetchNews(query = "latest") {
   try {
     const response = await fetch(
-      `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`
+      `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`
     );
     const data = await response.json();
 
